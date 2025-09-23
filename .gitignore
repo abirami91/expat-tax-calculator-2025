@@ -1,0 +1,32 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/dist
+/build
+
+# misc
+.DS_Store
+*.pem
+*.log
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# lockfiles (optional, if you don’t want to commit them)
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
