@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { useCalculator } from "./hooks/useCalculator";
 
 export function Inputs({ calc }: { calc: ReturnType<typeof useCalculator> }) {

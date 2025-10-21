@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Card } from "../../components/Card";
 import type { useCalculator } from "./hooks/useCalculator";
 

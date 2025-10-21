@@ -1,17 +1,27 @@
-import React from "react";
+// src/features/calculator/NetChart.tsx
 import {
-  ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, Legend, ReferenceLine
+  ResponsiveContainer,
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  ReferenceLine,
 } from "recharts";
 import { SOCIAL_2025 } from "../../lib/social2025";
 
-export function NetChart({ data }: { gross: number; net: number }[]) {
+type DataPoint = { gross: number; net: number };
+type NetChartProps = { data: DataPoint[] };
+
+export function NetChart({ data }: NetChartProps) {
   return (
     <div
-      id="net-chart"  // <-- add this so exportReport can capture the chart only
+      id="net-chart"
       className="h-80 w-full rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/40 p-3 pb-6"
       aria-label="Net income vs gross income chart"
     >
-      <ResponsiveContainer>
+      <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={data} margin={{ top: 40, right: 24, left: 8, bottom: 44 }}>
           <Legend
             layout="horizontal"
@@ -30,7 +40,7 @@ export function NetChart({ data }: { gross: number; net: number }[]) {
             label={{ value: "Net (€ / year)", angle: -90, position: "insideLeft" }}
           />
           <Tooltip
-            labelFormatter={(l: any) =>
+            labelFormatter={(l: number) =>
               "Gross " +
               Intl.NumberFormat("de-DE", {
                 style: "currency",

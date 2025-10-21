@@ -1,7 +1,5 @@
 // ⛔ remove this static import
 // import { exportDetailedReport } from "../../lib/exportpdf";
-
-import React, { useState } from "react";
 import { Brand } from "../../components/Brand";
 import { Inputs } from "./Inputs";
 import { Results } from "./Results";

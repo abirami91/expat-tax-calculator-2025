@@ -1,4 +1,4 @@
-import React from 'react';
+
 export const Logo = () => (
   <svg className="h-8 w-8 text-blue-600 dark:text-blue-400" viewBox="0 0 48 48" fill="none" aria-hidden>
     <rect x="4" y="8" width="40" height="28" rx="6" className="fill-current opacity-10" />
