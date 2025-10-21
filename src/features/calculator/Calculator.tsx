@@ -1,6 +1,8 @@
 // ⛔ remove this static import
 // import { exportDetailedReport } from "../../lib/exportpdf";
-import { useState, useMemo, useEffect, useRef, useCallback } from "react";
+import { useState } from "react";
+// then call React.useState(...)
+
 // keep existing imports from your components/libs below this
 import { Brand } from "../../components/Brand";
 import { Inputs } from "./Inputs";
